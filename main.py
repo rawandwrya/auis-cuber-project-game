@@ -1,4 +1,5 @@
 from hangman import start
+from phoenix import main as phoenix
 from mo import mo
 from zhsha import main as zhsha
 from ring import main as ring
@@ -11,7 +12,7 @@ from koagame import main as koagame
 game_path = start.starting_hangman()
 
 if game_path == 'phoenix':
-    pass
+    phoenix.phoenix()
 elif game_path == 'unknown':
     mo.unknown()
 elif game_path == 'tradition':
